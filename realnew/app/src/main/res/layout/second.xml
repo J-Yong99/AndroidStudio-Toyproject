@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="171dp"
+        android:layout_height="147dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="1111" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="198dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:text="2222" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="102dp"
+        android:layout_height="76dp"
+        android:layout_below="@+id/button1"
+        android:layout_toLeftOf="@+id/button1"
+        android:text="3333" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="50dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:text="4444" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/but11"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2">
+        <TableRow>
+            <Button
+                android:text="1"/>
+            <Button
+                android:text="1"/>
+            <Button
+                android:text="1"/>
+            <Button
+                android:text="1"/>
+            <Button
+                android:text="1"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_column="2"
+                android:text="2"
+                android:id="@+id/but1"
+                />
+            <Button
+                android:layout_column="4"
+                android:text="3"
+            />
+        </TableRow>
+
+    </TableLayout>
+
+    <GridLayout
+        android:id="@+id/gridbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but11"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <Button
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:layout_column="0"
+            android:layout_gravity="fill_vertical"
+            android:text="1" />
+
+        <Button android:text="1" />
+
+        <Button android:text="1" />
+
+        <Button android:text="1" />
+
+        <Button android:text="1" />
+
+        <Button android:text="1" />
+
+        <Button android:text="1" />
+
+        <Button android:text="1" />
+
+        <Button
+            android:id="@+id/a"
+            android:text="1" />
+
+
+    </GridLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/framelay1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridbut"
+        android:foreground="@drawable/ic_launcher_background"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="11" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11" />
+    </FrameLayout>
+
+</RelativeLayout>

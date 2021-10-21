@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemRed"
+        android:title="red">
+    </item>
+    <item
+        android:id="@+id/itemGreen"
+        android:title="green">
+    </item>
+    <item
+        android:id="@+id/itemBlue"
+        android:title="Blue">
+    </item>
+    <item
+        android:title="change button">
+        <menu>
+            <item
+                android:id="@+id/subRotate"
+                android:title="45">
+            </item>
+            <item
+                android:id="@+id/subSize"
+                android:title="2times">
+            </item>
+        </menu>
+    </item>
+</menu>
