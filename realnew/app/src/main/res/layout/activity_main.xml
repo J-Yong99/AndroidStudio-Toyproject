@@ -3,76 +3,116 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_gravity="top"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-         />
+
 
     <Button
         android:id="@+id/button"
         android:layout_width="114dp"
         android:layout_height="58dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="147dp"
-        android:layout_marginLeft="147dp"
-        android:layout_marginTop="156dp"
-
         android:text="@string/strBtn1" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="114dp"
         android:layout_height="58dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/button"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="147dp"
-        android:layout_marginLeft="147dp"
-        android:layout_marginTop="306dp"
         android:text="Button3" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="116dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_width="114dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="232dp"
-        android:text="Button2" />
+        android:text="Button2"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
         android:id="@+id/text1"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button3"
-        android:layout_alignRight="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignRight="@+id/button2"
         android:id="@+id/text2"/>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:gravity="center_horizontal"
         android:id="@+id/baseLayout"
         android:orientation="vertical">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button4"
-            android:text="push"/>
+
     </LinearLayout>
 <!--    <fragment-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent"-->
 <!--        android:name="com.example.rn.MainFragment"-->
 <!--        android:id="@+id/baseFragment"/>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baseLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button4"
+        android:text="thread" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="push" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="00000" />
+    <EditText
+        android:id="@+id/IdText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:hint="ID"
+        />
+    <EditText
+        android:id="@+id/PWText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IdText"
+        android:hint="PW"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PWText">
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"/>
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+    </RadioGroup>
 </RelativeLayout>
