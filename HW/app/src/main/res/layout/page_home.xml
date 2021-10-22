@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <EditText
+        android:id="@+id/Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:hint="ID"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:selectAllOnFocus="true"
+        android:gravity="center"
+        android:layout_below="@+id/Id"
+        />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Log in"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Register"
+        android:selectAllOnFocus="true" />
+    <Button
+        android:id="@+id/Mainpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="MainPage"
+        android:selectAllOnFocus="true" />
+
+</RelativeLayout>
