@@ -85,7 +85,7 @@ public class RegisterPage extends AppCompatActivity {
                     UserLlist.clear();
                 }
                 else{
-                    setStringArrayPref(UIdText.getText().toString(),UserLlist);
+                    setArray(UIdText.getText().toString(),UserLlist);
                     finish();
                 }
             }
@@ -106,15 +106,16 @@ public class RegisterPage extends AppCompatActivity {
             }
         });
     }
-    private void setStringArrayPref(String key, ArrayList<String> values) {
+    /* homepage에서 썼던 setArray*/
+    private void setArray(String key, ArrayList<String> values) {
         SharedPreferences prefs=getSharedPreferences("person_info",0);
         SharedPreferences.Editor editor = prefs.edit();
-        JSONArray a = new JSONArray();
+        JSONArray klist = new JSONArray();
         for (int i = 0; i < values.size(); i++) {
-            a.put(values.get(i));
+            klist.put(values.get(i));
         }
         if (!values.isEmpty()) {
-            editor.putString(key, a.toString());
+            editor.putString(key, klist.toString());
         } else {
             editor.putString(key, "error");
         }
